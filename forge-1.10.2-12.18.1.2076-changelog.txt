@@ -1,5 +1,53 @@
 Changelog:
-Build 2063:
+Build 2076:
+	LexManos:
+		Move dismount version of EntityMountEvent to Entity class. Should fix
+		canceling dismounting. Closes #3226
+
+Build 1.10.2-12.18.1.2075:
+	LexManos: Yet another fix for stupid stairs. Closes #3224
+
+Build 1.10.2-12.18.1.2074:
+	LexManos: Make StructureBlock TESRs always render. Closes #3222
+
+Build 1.10.2-12.18.1.2073:
+	paul.fulham0: Fix item use stats (#3216)
+
+Build 1.10.2-12.18.1.2072:
+	LexManos:
+		Fixed decorate event being called with SHROOM type for both convered
+		trees and large mushrooms. Closes #3215
+
+Build 1.10.2-12.18.1.2071:
+	LexManos: Another fix for registry substitutions. Closes #3212
+
+Build 1.10.2-12.18.1.2070:
+	LexManos: Add legacy support for signature change of AddCallback.
+	LexManos:
+		Update gradle wrapper to 2.14, reference MC json, and add java6 compat
+		lines to default MDK build.gradle.
+
+Build 1.10.2-12.18.1.2069:
+	bonii-xx: Revert changes to ItemTool for binary compatibility (#3211)
+
+Build 1.10.2-12.18.1.2068:
+	bonii-xx: Expand getHarvestLevel to include player and blockstate (#3192)
+
+Build 1.10.2-12.18.1.2067:
+	LexManos:
+		Make enchantment tables spawn particles for any custom energy provider.
+		Closes #3208
+
+Build 1.10.2-12.18.1.2066:
+	williewillus: Allow blocks to affect the beacon color (#3205)
+
+Build 1.10.2-12.18.1.2065:
+	LexManos: Fix armors rendering badly. Closes #3196
+
+Build 1.10.2-12.18.1.2064:
+	abab9579: Fixed NPE from missing Capabilities (#3191)
+
+Build 1.10.2-12.18.1.2063:
 	LexManos: Fix World Capabilities NPE when there are no attached capabilities.
 
 Build 1.10.2-12.18.1.2062:
