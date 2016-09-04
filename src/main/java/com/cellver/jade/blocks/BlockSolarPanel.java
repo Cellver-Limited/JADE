@@ -21,9 +21,8 @@ import net.minecraft.world.World;
 
 public class BlockSolarPanel extends Block {
 
-	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-	private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0f, 0f, 0f, 1.0f, 0.15f, 1.0f);
-	//private static final AxisAlignedBB COLLISION_BOX = new AxisAlignedBB(0, 0, 0, 1.0, 0.0625 * 2, 1.0);
+	private static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+	private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0, 0, 0, 1.0, 0.0625 * 2, 1.0);
 
 	public BlockSolarPanel() {
 		super(Material.ANVIL);
@@ -41,14 +40,18 @@ public class BlockSolarPanel extends Block {
 	}
 	
 	@Override
-	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return BOUNDING_BOX;
+	public boolean isFullBlock(IBlockState state) {
+		return false;
 	}
 	
 	@Override
-	public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox,
-			List<AxisAlignedBB> collidingBoxes, Entity entityIn) {
-		super.addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
+	
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		return BOUNDING_BOX;
 	}
 	
 	@Override
@@ -71,7 +74,6 @@ public class BlockSolarPanel extends Block {
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		EnumFacing facing = (EnumFacing) state.getValue(FACING);
-		int facingbits = facing.getHorizontalIndex();
-		return facingbits;
+		return facing.getHorizontalIndex();
 	}
 }
