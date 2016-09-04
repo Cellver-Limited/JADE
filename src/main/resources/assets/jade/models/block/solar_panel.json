@@ -1,0 +1,23 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "0": "blocks/anvil_base",
+        "1": "jade:blocks/solar_panel_top",
+        "particle": "blocks/anvil_base"
+    },
+    "elements": [
+        {
+            "name": "base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 2.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

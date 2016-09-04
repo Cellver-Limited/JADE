@@ -1,0 +1,9 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "blocks/iron_block",
+        "side": "blocks/iron_block",
+        "front": "jade:blocks/generator_front",
+        "particle": "blocks/iron_block"
+    }
+}

@@ -1,0 +1,7 @@
+item.cheese.name=Cheese
+
+tile.cheese.name=Block of Cheese
+tile.generator.name=Generator
+tile.solar_panel.name=Solar Panel
+
+itemGroup.tabJADE=Just Another Drone Experiment

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "jade:solar_panel", "y": 180 },
+        "facing=south": { "model": "jade:solar_panel" },
+        "facing=west":  { "model": "jade:solar_panel", "y": 90 },
+        "facing=east":  { "model": "jade:solar_panel", "y": 270 }
+    }
+}

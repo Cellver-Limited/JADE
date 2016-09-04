@@ -1,0 +1,18 @@
+[
+    {
+        "modid": "jade",
+        "name": "JADE",
+        "description": "Just Another Drone Experiment",
+        "version": "1.0.0-alpha",
+        "mcversion": "1.10.2",
+        "url": "https://www.cellver.com/projects/jade",
+        "updateUrl": "",
+        "authorList": [
+            "Dustin Schreiber / ReArmedHalo"
+        ],
+        "credits": "The Forge and FML peeps, MrCrayFish for his modding tutorials and Mr. Direwolf20 for the inspiration!",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "jade:generator", "y": 180 },
+        "facing=south": { "model": "jade:generator" },
+        "facing=west":  { "model": "jade:generator", "y": 90 },
+        "facing=east":  { "model": "jade:generator", "y": 270 }
+    }
+}
